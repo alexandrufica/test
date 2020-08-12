@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+/* General */
 
 * {
-    font-family: 'Italianno', cursive;
+    font-family: 'Oswald';
     
 }
 html { 
@@ -13,7 +17,9 @@ a, a:visited {
     color: black;
     
 }
-
+textarea {
+    resize: none;
+}
 ul {
     list-style-type: none;
 }
@@ -26,7 +32,7 @@ height: 55px;
 .logo img{
     margin-top: -75px;
 }
-
+/* Nav bar */
 nav {
     
     float:right;
@@ -62,6 +68,7 @@ nav {
 }
 
 
+/* Homepage */
 
 .photos {
     font-size: 45px;
@@ -98,27 +105,77 @@ nav {
 
 .title {
         font-size: 100px;
-        height: 500px;
-        padding-top:50px;
+        height: 300px;
+        padding-top:100px;
         text-align:center;
 
 }
 
+/* Footer */
+
 .foot {
-    background-color "";
-    height: fit-content;
-    display: flex; 
-    flex-wrap: nowrap;
+        
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
     justify-content: center;
-    font-size: 30px;
-    margin-bottom:-15px;
-    margin-top:100px;
+    gap: 10px;     
+    font-size:30px; 
+    margin-top: 10%;
+    
     
 }
 
 .foot img {
-    width: 25px;
-    padding-top:30px;
-    padding-left: 10px;
+    width: 25px; 
     
 }
+
+/* About page*/
+
+.about-content {
+    display: inline-block;
+    margin-left: 35%;
+    margin-top:10%;
+    font-size: 30px;    
+       
+}
+
+/* Contact page*/
+
+.contact-content {
+
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 37%;
+    row-gap: 10px;
+    padding-top:10px;
+
+}
+
+.contact-content input[type="text"], textarea{
+
+    font-size:30px;
+}
+
+.h2-contact {
+   padding-top: 10%;
+   text-align: center;
+   font-size: 40px;
+   padding-bottom: 50px;
+}
+
+.submit-button {
+    margin-left: 48%;
+    font-size: 25px;
+    transition: all 0.25s linear;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+.submit-button:hover {
+    background-color: lightgrey;
+    transform: scale(1.05, 1.05);
+}
+
